@@ -6,11 +6,11 @@ from ChatOpenRouter.chat_open_router import ChatOpenRouter
 
 load_dotenv()
 
-llm = ChatOpenRouter(model_name="deepseek/deepseek-r1:free")
+# llm = ChatOpenRouter(model_name="deepseek/deepseek-r1:free")
 
-prompt = ChatPromptTemplate.from_template("tell me a short joke about {topic}")
+# prompt = ChatPromptTemplate.from_template("tell me a short joke about {topic}")
 
-openrouter_chain = prompt | llm
+# openrouter_chain = prompt | llm
 
 # Direct output kliye
 # print(openrouter_chain.invoke({"topic": "apple"}))
@@ -23,3 +23,16 @@ openrouter_chain = prompt | llm
 # except:
 #     print("Error")
 #     pass
+
+
+# from DataIngestor.DataIngestor import load_pdf_into_docling, load_pdf_into_pinecone
+
+
+# splits = load_pdf_into_docling("files/finance-laws.pdf")
+
+
+# load_pdf_into_pinecone(splits, "legalaibot-litigation", "finance-laws")
+
+from langchain_pinecone import PineconeVectorStore
+
+vector_store = PineconeVectorStore(index=index, embedding=embeddings)
