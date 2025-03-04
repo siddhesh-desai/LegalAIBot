@@ -161,7 +161,7 @@ class LegalAIBot:
 
         self.memory.save_context({"input": user_query}, {"output": summary})
 
-        return summary
+        return summary, retrieved_data
 
     def get_chat_history(self):
         """Chat history ko retrieve karega"""
