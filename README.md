@@ -2,6 +2,8 @@
 
 LegalAIBot is an intelligent assistant designed to help users with legal queries by leveraging advanced AI models and a vector database. This project uses various AI and machine learning technologies like Vector DB - Pinecone, RAG Pipeline, Docling, Langchain to provide accurate and concise legal information.
 
+![LegalAIBot](https://github.com/user-attachments/assets/a0df8985-a42d-41f8-aadf-031d58d9bb3c)
+
 ## Table of Contents
 
 - [Installation](#installation)
